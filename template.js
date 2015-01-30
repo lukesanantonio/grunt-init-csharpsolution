@@ -8,7 +8,7 @@
 
 'use strict';
 // Basic template description.
-exports.description = 'Create a C# solution with main project + nunit test project'
+exports.description = 'Create a C# solution with main project';
 
 // Template-specific notes to be displayed before question prompts.
 exports.notes = '';
@@ -35,7 +35,6 @@ exports.template = function(grunt, init, done) {
   ], function(err, props) {
     props.keywords = [];
     props.projectGuid = generateUUID();
-    props.testProjectGuid = generateUUID();
     //
     // Files to copy (and process).
     var files = init.filesToCopy(props);
